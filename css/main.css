@@ -1,43 +1,37 @@
-body {
-    margin: 60px auto;
-    width: 70%;
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+html, body {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.worm {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  width: 300px;
+  margin-left: -50px;
+
+  path {
+    stroke-dasharray: 203px, 345px;
+    stroke-dashoffset: 0;
+    fill: none;
+    stroke: #EEAF9C;
+    stroke-width: 13;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    animation: worm 1s linear infinite;
+  }
 }
 
-ul.posts li {
-    list-style: none;
+@keyframes worm {
+  0% {
+    stroke-dashoffset: 0px;
+    transform: translateX(119px);
+  }
+  100% {
+    stroke-dashoffset: -136px;
+    transform: translateX(0);
+  }
 }
