@@ -1,11 +1,14 @@
 // Where is the circle
 //let x, y;
-let wiggleamount = 2;
-let wiggleamount1 = 2;
+let wiggleamount = 3;
+let wiggleamountb = wiggleamount;
+let wiggleamount1;
+let wiggleamount1b;
 let numBalls = 20;
 let balls = [];
 let wV = wiggleamount;
-let img; let img2;
+let img;
+let img2;
 let ballx = [];
 let bally = [];
 let xin;
@@ -13,25 +16,29 @@ let yin;
 let trailL;
 let l = 0;
 let wS = 1;
-function preload() {
-    img = loadImage('https://qph.fs.quoracdn.net/main-qimg-a5efcba589177855759b7ede17a5a330.webp');
-   img2 = loadImage('https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_Blank.svg/320px-Flag_Blank.svg.png');
-  
-}
+let sineW = false;
+let triangleW = false;
+let toothW = true;
+let squareW = false;
+
+
 
 function setup() {
-  
-  createCanvas(720, 400);
+  wiggleamount = random(1, 5);
+  wiggleamount1 = random(1, 5);
+  wiggleamount1b = wiggleamount1;
+
+
+  createCanvas(displayWidth, displayHeight);
   // Starts in the middle
   x = width / 2;
   y = height;
-img2.resize( width, height);
-img.resize(width,height);
+
   for (let i = 0; i < numBalls; i++) {
     balls[i] = new Ball(
       random(int(width)),
       random(int(height)),
-      2, 2,
+      wiggleamount, wiggleamount, wiggleamount1, wiggleamount1b,
       (random_boolean = Math.random() >= 0.5),
       (random_boolean = Math.random() >= 0.5),
       0
@@ -41,19 +48,16 @@ img.resize(width,height);
 }
 
 function draw() {
- //image(img,0,0);
- //background(50);
-  fill(15, 195, 185);
-image(img2,0,0);
+  //image(img,0,0);
+  //background(0);
 
-//erase();
+  //erase();
   balls.forEach(ball => {
     noStroke();
     ball.display();
-ball.back();
   });
-  
-  
+
+
   // Draw a circle
   // noStroke();
   // fill(100);
@@ -62,7 +66,8 @@ ball.back();
 }
 
 class Ball {
-  constructor(xin, yin, wiggleamount, wiggleamount1, directionup, directionleft, wiggletoggle) {
+
+  constructor(xin, yin, wiggleamount, wiggleamountb, wiggleamount1, wiggleamount1b, directionup, directionleft, wiggletoggle, ) {
     this.x = xin;
     this.y = yin;
     this.directionup = directionup;
@@ -74,30 +79,30 @@ class Ball {
 
   display() {
 
-    ellipse(this.x, this.y, 7, 7);
-
 
     if (this.y <= 2) {
       this.y = 3;
       this.directionup = false;
-     // this.wiggletoggle = 0;
+      // this.wiggletoggle = 0;
 
     }
     if (this.y >= height) {
       this.directionup = true;
-    //  this.wiggletoggle = 0;
-this.y = height -1;
+      //  this.wiggletoggle = 0;
+      this.y = height - 1;
     }
     if (this.x <= 2) {
       this.directionleft = false;
-   //   this.wiggletoggle = 0;
+      //   this.wiggletoggle = 0;
       this.x = 3;
     }
     if (this.x >= width) {
       this.directionleft = true;
-    //  this.wiggletoggle = 0;
-      this.x = width -1;
+      //  this.wiggletoggle = 0;
+      this.x = width - 1;
     }
+
+
     if (this.directionup) {
       this.y = this.y - this.wiggleamount - (wiggleamount1 / 2);
     } else {
@@ -110,59 +115,125 @@ this.y = height -1;
     } else {
       this.x = this.x + wiggleamount1 - (this.wiggleamount / 2);
     }
-    
-    
 
 
-    if (this.wiggletoggle == 1) {
-      this.wiggleamount = this.wiggleamount - wS;
-    
+    if (sineW) {
 
+      if (this.wiggletoggle == 1) {
+        this.wiggleamount = this.wiggleamount - wS;
+
+
+      }
+      if (this.wiggletoggle == 2) {
+        this.wiggleamount = this.wiggleamount - wS;
+
+      }
+
+      if (this.wiggletoggle == 3) {
+        this.wiggleamount = this.wiggleamount - wS;
+      }
+
+      if (this.wiggletoggle == 4) {
+        this.wiggleamount = this.wiggleamount + wS;
+
+      }
+      if (this.wiggletoggle == 5) {
+        this.wiggleamount = this.wiggleamount + wS;
+      }
+      if (this.wiggletoggle == 6) {
+        this.wiggleamount = this.wiggleamount + wS;
+
+        this.wiggletoggle = 0
+      }
     }
-    if (this.wiggletoggle == 2) {
-            this.wiggleamount = this.wiggleamount -wS;
+    if (triangleW == true) {
 
-    }
-    
-     if (this.wiggletoggle == 3) {
-            this.wiggleamount = this.wiggleamount -wS;
-    }
-    
-     if (this.wiggletoggle == 4) {
-         this.wiggleamount = this.wiggleamount +wS;
 
-    }
-     if (this.wiggletoggle == 5) {
-         this.wiggleamount = this.wiggleamount +wS;
-    }
-     if (this.wiggletoggle == 6) {
-         this.wiggleamount = this.wiggleamount +wS;
 
-      this.wiggletoggle = 0
-    }
-    
-    
-    
-if (this.wiggletoggle == this.wiggletoggle ){
-ballx[l] = this.x;
-bally[l] = this.y;
+      if (this.wiggletoggle == 3) {
+        this.wiggleamount = this.wiggleamount * -wS;
+      }
 
-l++;
-  if (l == 150) { l = 0 }
-  for (let i = 0 ; i < ballx.length ; i++){
-    ellipse ( ballx[i], bally[i],9,9)
-  }
+
+      if (this.wiggletoggle == 6) {
+        this.wiggleamount = this.wiggleamount * -wS;
+
+        this.wiggletoggle = 0
+      }
+    }
+
+    if (squareW == true) {
+
+
+
+      if (this.wiggletoggle == 0) {
+          this.wiggleamount = 8;
+
+      }
+      if (this.wiggletoggle == 2) {
+          this.wiggleamount = 0;
+
+
+      }
+      if (this.wiggletoggle == 12) {
+         this.wiggleamount = -8;
+
+      }
+
+      if (this.wiggletoggle == 14) {
+         this.wiggleamount = 0;
+      }
+      
+      if (this.wiggletoggle == 24) {
+          this.wiggleamount = 8;
+        this.wiggletoggle = 0;
+      }
+    }
+
+
+    if (toothW == true) {
+
+      if (this.wiggletoggle == 1) {
+
+          this.wiggleamount = 8 ;
+
+      }
+
+      if (this.wiggletoggle == 2) {
+          this.wiggleamount = 0;
+
+      }
     
-}
-  
+
+      if (this.wiggletoggle == 8) {
+        this.wiggletoggle = 0;
+      }
+    }
+
+
+    if (this.wiggletoggle == this.wiggletoggle) {
+      ballx[l] = this.x;
+      bally[l] = this.y;
+
+      l++;
+      fill(255);
+
+      if (l == 1) {
+        l = 0;
+      }
+      for (let i = 0; i < ballx.length; i++) {
+        ellipse(ballx[i], bally[i], 4, 4)
+      }
+
+
+      // fill(10);
+      //   ellipse(this.x, this.y, 7, 7);
+    }
+
 
     this.wiggletoggle++;
   }
-  
-  back() {
-         img2.copy(img,int( this.x), int( this.y), 7, 7,int( this.x),int( this.y), 4, 4);
 
-  }
-  
+
+
 }
-
