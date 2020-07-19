@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
 <link rel="stylesheet" href="https://github.com/Samuel-Morgan-Tyghe/samuel-morgan-tyghe.github.io/css/main.css" >
 <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
 <style>
@@ -8,16 +9,31 @@ h1{
   text-align:center;
   font-family: "Nunito";
 }
+	
+	body, html {
+  height: 100%;
+}
+
+.parallax {
+	
+  background-image: url('img_parallax.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+	
 </style>
 </head>   
 <body>
   <h1 > Side Room Recordings </h1>
-  
-<svg class="worm" x="0px" y="0px"
-	 viewBox="0 0 316 40" style="enable-background:new 0 0 316 40;" xml:space="preserve">
-<path d="M6.5,6.5c30,0,30,26.9,60,26.9c30,0,30-26.9,60-26.9c30,0,30,26.9,60,26.9c30,0,30-26.9,60-26.9
-	c30,0,30,26.9,60,26.9"/>
-</svg>
+      <script src="sketch.js"></script>
+
   
 </body>
 </html>
