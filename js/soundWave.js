@@ -4,7 +4,7 @@ let wiggleamount = 3;
 let wiggleamountb = wiggleamount;
 let wiggleamount1;
 let wiggleamount1b;
-let numBalls = 20;
+let numBalls = 200;
 let balls = [];
 let wV = wiggleamount;
 let img;
@@ -228,7 +228,7 @@ class Ball {
         l = 0;
       }
       for (let i = 0; i < ballx.length; i++) {
-        fill(150);
+        fill(0);
         ellipse(ballx[i], bally[i], 4, 4)
       }
 
