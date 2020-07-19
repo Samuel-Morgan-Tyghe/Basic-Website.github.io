@@ -15,4 +15,12 @@ h1:nth-child(1) {
 .gifRecording {
  left: 1000px;
  position: absolute;
+    z-index: 2;
+
+}
+.play{
+ margin-top: 350px;
+ font-size: 64px;
+   z-index: 3;
+
 }
