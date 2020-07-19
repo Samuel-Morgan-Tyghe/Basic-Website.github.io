@@ -2,7 +2,8 @@
  background-attachment: fixed;
   background-position: center;
   background-blend-mode: difference;
-
+    position: fixed;
+    bottom: 0px;
 }
 h1:nth-child(1) {
  font-size: 200px;
