@@ -18,15 +18,21 @@ let l = 0;
 let wS = 1;
 let sineW = false;
 let triangleW = false;
-let toothW = true;
+let toothW = false;
 let squareW = false;
-
+let typen;
 
 
 function setup() {
   wiggleamount = random(1, 5);
   wiggleamount1 = random(1, 5);
   wiggleamount1b = wiggleamount1;
+ typen = int (random(1,5));
+  print (typen);
+  if (typen==1) {sineW = true;}  
+  if (typen==2) {triangleW = true;}  
+  if (typen==3) {toothW = true;}  
+  if (typen==4) {squareW = true;}  
 
 
   createCanvas(displayWidth, displayHeight);
