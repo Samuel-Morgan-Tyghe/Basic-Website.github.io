@@ -1,37 +1,10 @@
-html, body {
-  position: relative;
-  z-index: 1;
-  height: 100vh;
-}
-
-.worm {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.2);
-  width: 300px;
-  margin-left: -50px;
-
-  path {
-    stroke-dasharray: 203px, 345px;
-    stroke-dashoffset: 0;
-    fill: none;
-    stroke: #EEAF9C;
-    stroke-width: 13;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    animation: worm 1s linear infinite;
-  }
-}
-
-@keyframes worm {
-  0% {
-    stroke-dashoffset: 0px;
-    transform: translateX(119px);
-  }
-  100% {
-    stroke-dashoffset: -136px;
-    transform: translateX(0);
-  }
+#defaultCanvas0 {
+ padding-right: 5px;
+ border-right-width: 5px;
+ margin-right: 55px;
+ top: 214.125px;
+ width: 1000px;
+ height: 500px;
+ position: relative;
+ left: 184px;
 }
