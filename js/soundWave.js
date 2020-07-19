@@ -68,7 +68,7 @@ function draw() {
   // noStroke();
   // fill(100);
   //ellipse(x, y, 24, 24);
-
+text 
 }
 
 class Ball {
@@ -222,18 +222,17 @@ class Ball {
       bally[l] = this.y;
 
       l++;
-      fill(255);
+      fill(0);
 
       if (l == 1) {
         l = 0;
       }
       for (let i = 0; i < ballx.length; i++) {
-        fill(0);
         ellipse(ballx[i], bally[i], 4, 4)
       }
 
-// 
-      
+
+      // fill(10);
       //   ellipse(this.x, this.y, 7, 7);
     }
 
