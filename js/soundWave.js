@@ -228,11 +228,12 @@ class Ball {
         l = 0;
       }
       for (let i = 0; i < ballx.length; i++) {
+        fill(150);
         ellipse(ballx[i], bally[i], 4, 4)
       }
 
-
-      // fill(10);
+// 
+      
       //   ellipse(this.x, this.y, 7, 7);
     }
 
