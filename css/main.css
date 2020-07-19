@@ -21,10 +21,8 @@ h1:nth-child(1) {
 }
 .myDiv{
 margin-top: 1000px;
- font-size: 64px;
-   z-index: 3;
-       text-align:center;
+font-size: 64px;
+z-index: 3;
+text-align:center;
 position: relative;
-left: 50%;
-border: 5px outset red;
 }
