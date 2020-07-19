@@ -1,7 +1,5 @@
 #defaultCanvas0 {
- background-attachment: fixed;
-  background-position: center;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
    z-index: -1;
 
