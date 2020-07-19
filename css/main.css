@@ -1,7 +1,6 @@
 #defaultCanvas0 {
  background-attachment: fixed;
   background-position: center;
-  background-blend-mode: difference;
     position: fixed;
     bottom: 0px;
    z-index: -1;
@@ -10,7 +9,6 @@
 h1:nth-child(1) {
  font-size: 200px;
  text-decoration-line: underline;
- background-blend-mode: difference;
    z-index: 1;
 
 }
