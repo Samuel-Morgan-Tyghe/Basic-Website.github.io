@@ -8,7 +8,7 @@
       width:100%;
 }
 h1:nth-child(1) {
- font-size: 200px;
+ font-size: 200vw;
  text-decoration-line: underline;
  position: fixed;
    z-index: 1;
