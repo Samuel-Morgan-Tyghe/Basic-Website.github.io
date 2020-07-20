@@ -4,6 +4,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
       <script src="/js/soundWave.js"></script>
+      <script src="/js/rellax.min.js"></script>
+<script>
+  var rellax = new Rellax('.rellax');
+</script>
+
      <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <style>
@@ -14,19 +19,25 @@
 </style>
    </head>
    <body>
+<main class="wrapper">
+
       <section class="topDiv">
       <h1> SIDE ROOM RECORDINGS</h1>
          </section>
 
+<div class="gifRecordingd rellax" data-rellax-speed="8">
+<iframe class="gifRecording" src="https://giphy.com/embed/xTk9ZLg70jvMTasphu" width="480" height="270"  >
+</iframe>
+</div>
       <section class="PlayDiv">
+
+
+
 <div class="playButton">
 <span class="dot"></span>
       <div><p  class ="play"> PLAY  </p></div>
 
-<div class="gifRecordingd">
-<iframe class="gifRecording" src="https://giphy.com/embed/xTk9ZLg70jvMTasphu" width="480" height="270"  >
-</iframe>
-</div>
+
 </div>
 </section>
 
@@ -59,7 +70,7 @@
       </section >
 
             
-         
+         </main >
          </body>
     
 </html>
