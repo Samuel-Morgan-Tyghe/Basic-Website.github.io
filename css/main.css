@@ -36,13 +36,12 @@ text-align: center;
 
 }
 .gifRecordingd{
-
+top: 5vw;
+left: 60vw;
   position: relative;
   overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; 
-  bottom: 120vw;
-
+  width: 34vw;
+  padding-top: 19.2vw; 
 }
 
 .gifRecording{
