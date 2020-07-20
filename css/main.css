@@ -1,29 +1,26 @@
 #defaultCanvas0 {
-      background-attachment: fixed;
-    background-position: center;
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    z-index: -1;
-      width:100%;
+background-attachment: fixed;
+background-position: center;
+position: fixed;
+bottom: 0px;
+left: 0px;
+z-index: -1;
+width:100%;
 }
 h1:nth-child(1) {
-      
-       margin: auto;
- 
-    top: 0px;
-    bottom: 0px;
- font-size: 10vw;
- text-decoration-line: underline;
- position: fixed;
-   z-index: 1;
+margin: auto;
+top: 0px;
+bottom: 0px;
+font-size: 10vw;
+text-decoration-line: underline;
+position: fixed;
+z-index: 1;
 width:100%;
 }
 .gifRecording {
- left: 1000px;
- position: absolute;
-    z-index: 1;
-
+left: 1000px;
+position: absolute;
+z-index: 1;
 }
 .myDiv{
 margin-top: 1000px;
@@ -34,33 +31,24 @@ position: relative;
 }
 .play{
 z-index: 3;
-
 }
-	.play {
-  height: 200px;
-  width: 200px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-		colormode: difference;
+.play {
+height: 200px;
+width: 200px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+colormode: difference;
 }
-
-
 h1{
- text-align:center;
- font-family: "Nunito";
- font-size: 200px;
- text-decoration-line: underline;
- color: rgb(253, 252, 252);
-    bottom: 200px;
-	}
-
-	
-	
-
-	p{ text-align:center;
-
-		font-family: "Nunito";
-	
-		color: rgb(253, 252, 252);
-	}
+text-align:center;
+font-family: "Nunito";
+font-size: 200px;
+text-decoration-line: underline;
+color: rgb(253, 252, 252);
+bottom: 200px;
+}
+p{ text-align:center;
+font-family: "Nunito";
+color: rgb(253, 252, 252);
+}
