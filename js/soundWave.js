@@ -4,7 +4,7 @@ let wiggleamount = 3;
 let wiggleamountb = wiggleamount;
 let wiggleamount1;
 let wiggleamount1b;
-let numBalls = 300;
+let numBalls = 100;
 let balls = [];
 let wV = wiggleamount;
 let img;
