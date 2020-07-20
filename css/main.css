@@ -8,6 +8,11 @@
       width:100%;
 }
 h1:nth-child(1) {
+      
+       margin: auto;
+ 
+    top: 0px;
+    bottom: 0px;
  font-size: 10vw;
  text-decoration-line: underline;
  position: fixed;
