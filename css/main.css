@@ -40,7 +40,7 @@ border-radius: 50%;
 display: inline-block;
 colormode: difference;
 }
-h1{
+.h1{
 text-align:center;
 font-family: "Nunito";
 font-size: 200px;
@@ -48,7 +48,7 @@ text-decoration-line: underline;
 color: rgb(253, 252, 252);
 bottom: 200px;
 }
-p{ text-align:center;
+.p{ text-align:center;
 font-family: "Nunito";
 color: rgb(253, 252, 252);
 }
