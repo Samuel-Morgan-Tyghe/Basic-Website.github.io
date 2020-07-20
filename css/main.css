@@ -7,42 +7,51 @@ left: 0px;
 z-index: -1;
 width:100%;
 }
-div {
-  display: flex;
-  justify-content: center;
+
+.topDiv , h1 {
+padding-top: 15vw;
+padding-bottom: 9vw;
+
+text-align: center;
+font-size: 9vw;
+/*position: fixed; */
 }
 
-.topDiv{
-text-align:center;
-font-family: "Nunito";
-font-size: 200px;
-text-decoration-line: underline;
-color: rgb(253, 252, 252);
-bottom: 200px;
+.PlayDiv{
+width: 0%;
+  margin: 0 auto;
+
 }
-.playDiv {
-height: 200px;
-width: 200px;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
-colormode: difference;
-margin: auto;
-top: 0px;
-bottom: 0px;
-font-size: 10vw;
-text-decoration-line: underline;
-position: fixed;
-z-index: 1;
-width:100%;
+.playButton{
+  height: 20vw;
+  width: 20vw;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
 }
-.play{
-z-index: 3;
+.play {
+width: 150%;
+font-size: 6vw;
+text-align: center;
+
+}
+.gifRecordingd{
+
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; 
+  bottom: 120vw;
+
 }
 
+.gifRecording{
 
-.gifRecording {
-left: 1000px;
-position: absolute;
-z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
