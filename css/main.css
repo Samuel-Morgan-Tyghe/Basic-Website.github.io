@@ -22,7 +22,7 @@ left: 1000px;
 position: absolute;
 z-index: 1;
 }
-.myDiv{
+.playDiv{
 margin-top: 1000px;
 font-size: 64px;
 z-index: 2;
