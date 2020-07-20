@@ -7,6 +7,10 @@ left: 0px;
 z-index: -1;
 width:100%;
 }
+div {
+  display: flex;
+  justify-content: center;
+}
 
 .topDiv{
 text-align:center;
