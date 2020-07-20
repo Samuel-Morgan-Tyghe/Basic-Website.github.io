@@ -7,7 +7,22 @@ left: 0px;
 z-index: -1;
 width:100%;
 }
-h1:nth-child(1) {
+
+.topDiv{
+text-align:center;
+font-family: "Nunito";
+font-size: 200px;
+text-decoration-line: underline;
+color: rgb(253, 252, 252);
+bottom: 200px;
+}
+.playDiv {
+height: 200px;
+width: 200px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+colormode: difference;
 margin: auto;
 top: 0px;
 bottom: 0px;
@@ -17,38 +32,13 @@ position: fixed;
 z-index: 1;
 width:100%;
 }
+.play{
+z-index: 3;
+}
+
+
 .gifRecording {
 left: 1000px;
 position: absolute;
 z-index: 1;
-}
-.playDiv{
-margin-top: 1000px;
-font-size: 64px;
-z-index: 2;
-text-align:center;
-position: relative;
-}
-.play{
-z-index: 3;
-}
-.play {
-height: 200px;
-width: 200px;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
-colormode: difference;
-}
-.h1{
-text-align:center;
-font-family: "Nunito";
-font-size: 200px;
-text-decoration-line: underline;
-color: rgb(253, 252, 252);
-bottom: 200px;
-}
-.p{ text-align:center;
-font-family: "Nunito";
-color: rgb(253, 252, 252);
 }
