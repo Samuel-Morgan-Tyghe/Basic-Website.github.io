@@ -9,26 +9,47 @@
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link rel="stylesheet" href="css/main.css" >
 
-      <style>
+  <style>
       h1, h2, h3, h4, h5, h6, p {
          font-family: "Jost";
- color: blue;
+ 
 }
 </style>
-</head>
-   <body>
-<main class="wrapper">
+<script>
+  var selector = 0;
 
-      <section class="topDiv" >
-      <h1> SIDE ROOM RECORDINGS</h1>
-         </section>
+  function change_css() {
+    selector = selector + 1;
+    if (selector == 1) {
+      document.getElementById("wrapper").style.cssText = "color:orange; background-color: blue;z-index:-2;"
+
+    } else if (selector == 2) {
+      document.getElementById("wrapper").style.cssText = "color:white; background-color: orange;"
+
+    } else if (selector == 3) {
+      document.getElementById("wrapper").style.cssText = "color:blue;background-color: white;";
+      selector = 0;
+    }
+
+  }
+
+</script>
+<style type="text/css">body { cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAkABgDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAioqKAGu+6ADw8PwAvby7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiIgAAAAAAAAAAAAAAAAIiIiIgAAAAAAAAAAAAAAAAIiIiIgAAAAAAAAAAAAAAAAIiIiIgAAAAAAAAAAAAAAAAIiIiIiIgAAAAAAAAAAAAAAIiIiIiIgAAAAAAAAAAAAAAIiIiIiIgAAAAAAAAAAAAAAIiIiIiAAAAAAAAAAAAAAACIiIgAAMwAAAAAAAAAAAAAiIiIDMDIgAAAAAAAAAAAAIgAAAyICIgAAAAAAAAAAACAzAzAiICIgAAAAAAAAAAACIwMiAiICIAAAAAAAAAAAIiAAIiAiIAAAAAAAAAAAACIAMwIiAiAAAAAAAAAAAAAAIDIgIiAAAAAAAAAAAAAAAAECIgIgAAAAAAAAAAAAAAABECIgAAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUFBAAAAAAAAAAAAAAAAABQUFBAAAAAAAAAAAAAAAAFBQUFBAAAAAAAAAAAAAAAEFBQUFAAAAAAAAAAAAAAAAUFBQUEAAAAAAAAAAAAAAAQUFBQUAAAAAAAAAAAAAAABQUFBQQAAAAAAAAAAAAAAABQUFBAAAAAAAAAAAAAAAAABQUEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Af///AD///4Af///AAf//4AD+f/AAeH/4ADD//AAA//wAAf/8AAP//AAD//wAAf/8AAH//AAD//wAB//8AA///wAf//8AP//+AH///AD//4AP//8AH//+AD///AB///wAf//8AH///AB///wAf//+AP///wH///+D////////w=='), auto; }</style>
+   </head>
+   <body onclick="change_css()">
+<main class="wrapper" id="wrapper"  onclick="change_css()>
+
+<center class="everythingbutscript">
+      <center class="topDiv"  >
+      <h1 > SIDE ROOM RECORDINGS</h1>
+         </center>
 
 <div class="gifRecordingd " >
 <iframe class="gifRecording" src="https://giphy.com/embed/xTk9ZLg70jvMTasphu" frameBorder="0"  width="480" height="270"  >
 
 </iframe>
 </div>
-      <section class="PlayDiv">
+      <center class="PlayDiv">
 
 
 
@@ -38,12 +59,12 @@
 
 
 </div>
-</section>
+</center>
 
       
-
-      <section class="aboutDiv">
 <div class="border"></div>
+
+      <center class="aboutDiv">
 
          <div class="aboutGif" ><iframe src="https://gifer.com/embed/1fmB" width="100%" height="100%" frameBorder="0" allowFullScreen></iframe></div>
 
@@ -54,9 +75,9 @@
 
       </p>
 </div>
-      </section>
+      </center>
 
-      <section class="projectsDiv">
+      <center class="projectsDiv">
       <div class="borders">
 
          <h1>SSR Projects</h1>
@@ -64,17 +85,17 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/yI2oS2hoL0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
          <iframe width="560" height="315" src="https://www.youtube.com/embed/-bh_AOQgQ3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-      </section >
-         <section class="priceDiv">
+      </center >
+         <center class="priceDiv">
             <h2>Packages</h2>
         
             <p> £10 Soap Wash</p>
                        <p> £20 Soap Wash</p>
                         <p> £30 Soap Wash</p>
                         <p> £40 Soap Wash</p>
-      </section >
+      </center >
 
-            
+            </center>
          </main >
          </body>
     
