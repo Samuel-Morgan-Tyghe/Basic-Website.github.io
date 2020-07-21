@@ -1,4 +1,16 @@
+html, body {
+  background: rgba(51, 170, 51, .1) ;
+z-index: -3;
+background-blend-mode: difference;
+
+}
+
+.three {
+  background-color: #440381;
+}
+
 #defaultCanvas0 {
+background-blend-mode: difference;
 background-attachment: fixed;
 background-position: center;
 position: fixed;
@@ -9,17 +21,34 @@ width:100%;
 }
 
 
-
-
-p:active, h1:active, h2:active h3:active h4:active{
+/*p:active, h1:active, h2:active h3:active h4:active{
 background-color: lightyellow;
 z-index: 1;
+}*/
+
+.wrapper{
+background-blend-mode: difference;
 
 }
+
+.border0{
+
+width: 100%;
+ border: 5px double rgb(12, 162, 175);
+position: fixed;
+}
+
+
+
+
 h1{
+
+
 z-index: 1;
 }
 .topDiv , h1 {
+
+
 padding-top: 7vw;
 padding-bottom: 7vw;
 
@@ -30,6 +59,9 @@ z-index: 1;
 }
 
 .PlayDiv{
+
+
+
 width: 0%;
   margin: 0 auto;
 z-index: 1;
@@ -38,14 +70,16 @@ z-index: 1;
 .playButton{
   height: 20vw;
   width: 20vw;
-  background-color: #ddd;
+  background-color: red;
+opacity:70%;
   border-radius: 50%;
   display: inline-block;
 }
 .play {
-width: 150%;
-font-size: 6vw;
-text-align: center;
+
+font-size:8vw;
+width:200%;
+text-allign: center;
 
 }
 .gifRecordingd{
@@ -97,6 +131,9 @@ font-size: 2vw;
 width: 120%;
  border: 5px double rgb(12, 162, 175);
 
+}
+.projectsDiv{
+flex-direction: column;
 }
 
 .borders{
