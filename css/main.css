@@ -8,18 +8,31 @@ z-index: -1;
 width:100%;
 }
 
+
+
+
+p:active, h1:active, h2:active h3:active h4:active{
+background-color: lightyellow;
+z-index: 1;
+
+}
+h1{
+z-index: 1;
+}
 .topDiv , h1 {
-padding-top: 15vw;
-padding-bottom: 9vw;
+padding-top: 7vw;
+padding-bottom: 7vw;
 
 text-align: center;
 font-size: 9vw;
-/*position: fixed; */
+z-index: 1;
+
 }
 
 .PlayDiv{
 width: 0%;
   margin: 0 auto;
+z-index: 1;
 
 }
 .playButton{
@@ -54,6 +67,7 @@ left: 60vw;
   bottom: 0;
   right: 0;
   width: 100%;
+height: 100%;
 }
 
 .aboutDiv{
@@ -67,16 +81,12 @@ top: 20vw;
 z-index: 2;
 padding-bottom: 10%;
 }
-
-
-.aboutGif{
- position: relative;
+.embed-container{
+ position: fixed;
 float:left;
-width: 30%;
-stretch: 100%;
+width: 60%;
 }
-
-.aboutP  {
+.aboutpcontainer  {
 float:right;
  background-color: rgb(255, 255, 255,0.9);
 font-size: 2vw;
