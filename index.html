@@ -3,31 +3,40 @@
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
-      <script src="/js/soundWave.js"></script>
-<link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
-      
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="css/main.css" >
+<script src="https://samuel-morgan-tyghe.github.io/js/soundWave.js"></script>
+<script src="https://samuel-morgan-tyghe.github.io/js/rellax.min.js"></script>
+<script>
+  var rellax = new Rellax('.rellax');
+</script>
 
-  <style>
+
+
+
+
+<link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <style>
       h1, h2, h3, h4, h5, h6, p {
          font-family: "Jost";
  
 }
 </style>
+
+
 <script>
   var selector = 0;
 
   function change_css() {
     selector = selector + 1;
     if (selector == 1) {
-      document.getElementById("wrapper").style.cssText = "color:orange; background-color: blue;z-index:-2;"
+      document.getElementById("wrapper").style.cssText = "color:rgb(20,159,157); background-color: rgb(233,94,87,0.5);"
 
     } else if (selector == 2) {
-      document.getElementById("wrapper").style.cssText = "color:white; background-color: orange;"
+      document.getElementById("wrapper").style.cssText = "color:rgb(238,243,220); background-color: rgb(120,159,157,0.5);"
 
     } else if (selector == 3) {
-      document.getElementById("wrapper").style.cssText = "color:blue;background-color: white;";
+      document.getElementById("wrapper").style.cssText = "color:rgb(233,94,87);background-color:rgb(238,243,220,0.5);";
       selector = 0;
     }
 
@@ -37,25 +46,35 @@
 <style type="text/css">body { cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAkABgDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAioqKAGu+6ADw8PwAvby7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiIgAAAAAAAAAAAAAAAAIiIiIgAAAAAAAAAAAAAAAAIiIiIgAAAAAAAAAAAAAAAAIiIiIgAAAAAAAAAAAAAAAAIiIiIiIgAAAAAAAAAAAAAAIiIiIiIgAAAAAAAAAAAAAAIiIiIiIgAAAAAAAAAAAAAAIiIiIiAAAAAAAAAAAAAAACIiIgAAMwAAAAAAAAAAAAAiIiIDMDIgAAAAAAAAAAAAIgAAAyICIgAAAAAAAAAAACAzAzAiICIgAAAAAAAAAAACIwMiAiICIAAAAAAAAAAAIiAAIiAiIAAAAAAAAAAAACIAMwIiAiAAAAAAAAAAAAAAIDIgIiAAAAAAAAAAAAAAAAECIgIgAAAAAAAAAAAAAAABECIgAAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUFBAAAAAAAAAAAAAAAAABQUFBAAAAAAAAAAAAAAAAFBQUFBAAAAAAAAAAAAAAAEFBQUFAAAAAAAAAAAAAAAAUFBQUEAAAAAAAAAAAAAAAQUFBQUAAAAAAAAAAAAAAABQUFBQQAAAAAAAAAAAAAAABQUFBAAAAAAAAAAAAAAAAABQUEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Af///AD///4Af///AAf//4AD+f/AAeH/4ADD//AAA//wAAf/8AAP//AAD//wAAf/8AAH//AAD//wAB//8AA///wAf//8AP//+AH///AD//4AP//8AH//+AD///AB///wAf//8AH///AB///wAf//+AP///wH///+D////////w=='), auto; }</style>
    </head>
    <body onclick="change_css()">
+<script src="https://samuel-morgan-tyghe.github.io/js/soundWave.js"></script>
+
+
+
 <main class="wrapper" id="wrapper"  onclick="change_css()>
 
+
+
+
+
 <center class="everythingbutscript">
+<div class="border0"></div>
+
+
+
       <center class="topDiv"  >
-      <h1 > SIDE ROOM RECORDINGS</h1>
+      <h1 class="title"> SIDE ROOM RECORDINGS</h1>
          </center>
 
-<div class="gifRecordingd " >
+<div class="gifRecordingd">
 <iframe class="gifRecording" src="https://giphy.com/embed/xTk9ZLg70jvMTasphu" frameBorder="0"  width="480" height="270"  >
 
 </iframe>
 </div>
-      <center class="PlayDiv">
+      <center class="PlayDiv rellax" data-rellax-speed="4"">
 
-
-
-<div class="playButton">
+<div class="playButton rellax" data-rellax-speed="-4">
 <span class="dot" ></span>
-      <div><p  class ="play"> PLAY  </p></div>
+      <div><p class ="play"> PLAY  </p></div>
 
 
 </div>
@@ -86,6 +105,8 @@
          <iframe width="560" height="315" src="https://www.youtube.com/embed/-bh_AOQgQ3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
       </center >
+
+
          <center class="priceDiv">
             <h2>Packages</h2>
         
@@ -97,6 +118,7 @@
 
             </center>
          </main >
+
          </body>
     
 </html>
