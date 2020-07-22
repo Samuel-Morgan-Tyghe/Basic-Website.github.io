@@ -77,12 +77,12 @@ z-index: 1;
 .playButton{
   height: 20vw;
   width: 20vw;
-  background-color: red;
-opacity:70%;
+  background-color: rgb(255,0,0,.6);
   border-radius: 50%;
   display: inline-block;
 }
 .play {
+
 font-size:8vw;
 width:200%;
 text-allign: center;
