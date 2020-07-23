@@ -1,9 +1,4 @@
 html, body {
-color: colorcustom;
-  background: rgba(51, 170, 51, .1) ;
-z-index: -3;
-background-blend-mode: difference;
-
 }
 
 .three {
@@ -11,14 +6,14 @@ background-blend-mode: difference;
 }
 
 #defaultCanvas0 {
-background-blend-mode: difference;
 background-attachment: fixed;
 background-position: center;
 position: fixed;
 bottom: 0px;
 left: 0px;
-z-index: -1;
+z-index: 0;
 width:100%;
+  mix-blend-mode: none;
 }
 
 
@@ -28,7 +23,7 @@ z-index: 1;
 }*/
 
 .wrapper{
-background-blend-mode: difference;
+z-index: 1;
 
 }
 
@@ -60,10 +55,12 @@ z-index: 1;
 
 .gifRecordingd{
 margin-top: -10%;
+z-index: 0;
 }
 
 .PlayDiv{
-
+z-index: 1;
+  mix-blend-mode: difference;
 
 
 width: 0%;
@@ -71,17 +68,20 @@ width: 0%;
 margin-top: -10%;
 margin-bottom: 10%;
 
-z-index: 1;
 
 }
 .playButton{
+z-index: 1;
+
   height: 20vw;
   width: 20vw;
   background-color: rgb(255,0,0,.6);
   border-radius: 50%;
   display: inline-block;
+
 }
 .play {
+z-index: 1;
 
 font-size:8vw;
 width:200%;
@@ -101,7 +101,7 @@ left: 60vw;
 
 }
 .aboutDiv{
-background-color:white;
+background-color:inherit;
 display:flex;
 margin:auto;
 margin-left: 25%;
@@ -115,12 +115,12 @@ height:500px;
 
 .aboutpcontainer{
 text-align: left;
-overflow-y: auto;
-height:250px;
+overflow-y: auto	;
+height:300px;
 margin: auto;
 margin-left:5%;
 text-transform: uppercase;
-  width: 28vw;
+  width: 25vw;
 }
 .aboutP{
  
@@ -156,14 +156,14 @@ margin-left:25%;
 
 }
 .projectsDiv{
-background-color: white;
+background-color:inherit;
 flex-direction: column;
 }
 
 .borders{
- text-align: left;
 width: 90%;
- left: -500px;
+margin-left:5%;
+
 border: 5px double rgb(12, 162, 175);
 }
 
