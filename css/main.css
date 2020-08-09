@@ -1,19 +1,13 @@
-html, body {
-}
 
 .three {
   background-color: #440381;
 }
 
 #defaultCanvas0 {
-background-attachment: fixed;
-background-position: center;
-position: fixed;
-bottom: 0px;
-left: 0px;
-z-index: 0;
-width:100%;
-  mix-blend-mode: none;
+  background-color: khaki;
+  position: fixed;
+  z-index: -2;
+  opacity: 30%;
 }
 
 
@@ -24,7 +18,7 @@ z-index: 1;
 
 .wrapper{
 z-index: 1;
-
+background-color: lavender;
 }
 
 .border0{
