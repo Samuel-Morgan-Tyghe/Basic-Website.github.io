@@ -30,7 +30,7 @@ z-index: 1;
 .border0{
 
 width: 90%;
-text-allign:center;
+text-align:center;
 left:5%;
  border: 5px double rgb(12, 162, 175);
 position: fixed;
@@ -85,7 +85,7 @@ z-index: 1;
 
 font-size:8vw;
 width:200%;
-text-allign: center;
+text-align: center;
 
 }
 .gifRecordingd{
@@ -165,7 +165,6 @@ width: 90%;
 margin-left:5%;
 
 border: 5px double rgb(12, 162, 175);
-}
 
   height: 100%;
 }
