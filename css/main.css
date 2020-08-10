@@ -20,12 +20,9 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.title{
-  z-index: 0;
-}
-.title::first-letter{
-  color: aqua;
-    z-index: 3;
+
+.title::first-line{
+  z-index: -1;
 } 
 .bColor .title1{
   position: absolute;

@@ -29,25 +29,25 @@
 </script>
 <script>
   var selector = 0;
+  var c1 = rgb(100,100,100);
+
+
 
   function change_css() {
     selector = selector + 1;
     if (selector == 1) {
-      document.getElementById("wrapper").style.cssText = "color:rgb(20,159,157); background-color: rgb(233,94,87);"
-      document.getElementsByClassName("fColor").style.cssText = "color:rgb(20,159,157);"
-      document.getElementsByClassName("title1").style.cssText = "color: rgb(233,94,87);"
+      document.getElementById("wrapper").style.cssText = "color:rgb(238,208,226); background-color: rgb(233,94,87);";
+      document.getElementById("title").style.cssText = String("color:"+c1+";");
 
     } else if (selector == 2) {
-      document.getElementById("wrapper").style.cssText = "color:rgb(238,243,220); background-color: rgb(120,159,157);"
-      document.getElementsByClassName("fColor").style.cssText = "color:rgb(238,243,220);"
-      document.getElementsByClassName("title1").style.cssText = "color:rgb(120,159,157);"
+      document.getElementById("wrapper").style.cssText = "color:rgb(169,203,221); background-color: rgb(238,208,226);";
+      document.getElementById("title").style.cssText = "color:rgb(233,94,87);";
 
 
     } else if (selector == 3) {
+      document.getElementById("wrapper").style.cssText = "color:rgb(233,94,87);background-color:rgb(169,203,221);";
+      document.getElementById("title").style.cssText = "color: rgb(238,208,226);";
       selector = 0;
-      document.getElementById("wrapper").style.cssText = "color:rgb(233,94,87);background-color:rgb(238,243,220);";
-      document.getElementsByClassName("fColor").style.cssText = "color:rgb(233,94,87);";
-      document.getElementsByClassName("title1").style.cssText = "color:rgb(238,243,220);"
 
     }
 
@@ -59,10 +59,6 @@
 
 
    <body onclick="change_css()">
-
-
-      <div class="fColor"id="fColor"></div>
-      <div class="bColor"></div>
 
 
 <main class="wrapper"id="wrapper"onclick="change_css()>
@@ -80,7 +76,7 @@
 
 
 
-      <h1 class="title"> SIDE ROOM RECORDINGS</h1>
+      <h1 class="title fColor" id="title"> SIDE ROOM RECORDINGS</h1>
       <div class="bColor"><h1 class="title1"> SIDE ROOM RECORDINGS</h1></div>
 
 </div>
