@@ -29,24 +29,27 @@
 </script>
 <script>
   var selector = 0;
-  var c1 = rgb(100,100,100);
+  var c1 = "rgb(225,101,93);";
+  var c2 = "rgb(132,190,216);";
+  var c3= "rgb(131,189,146);";
 
 
 
   function change_css() {
     selector = selector + 1;
     if (selector == 1) {
-      document.getElementById("wrapper").style.cssText = "color:rgb(238,208,226); background-color: rgb(233,94,87);";
-      document.getElementById("title").style.cssText = String("color:"+c1+";");
+      document.getElementById("wrapper").style.cssText = "color:"+c1+ " background-color:" +c2;
+      document.getElementById("title").style.cssText = "color:"+c3;
+
 
     } else if (selector == 2) {
-      document.getElementById("wrapper").style.cssText = "color:rgb(169,203,221); background-color: rgb(238,208,226);";
-      document.getElementById("title").style.cssText = "color:rgb(233,94,87);";
+      document.getElementById("wrapper").style.cssText = "color:"+c2+ " background-color:" +c3;
+      document.getElementById("title").style.cssText = "color:"+c1;
 
 
     } else if (selector == 3) {
-      document.getElementById("wrapper").style.cssText = "color:rgb(233,94,87);background-color:rgb(169,203,221);";
-      document.getElementById("title").style.cssText = "color: rgb(238,208,226);";
+      document.getElementById("wrapper").style.cssText = "color:"+c3+ " background-color:" +c1;
+      document.getElementById("title").style.cssText = "color:" +c2;
       selector = 0;
 
     }
@@ -80,7 +83,7 @@
       <div class="bColor"><h1 class="title1"> SIDE ROOM RECORDINGS</h1></div>
 
 </div>
-
+<div class="page2">
 
 <div class="gifRecordingd" style="position:relative;">
 <iframe class="gifRecording" src="https://giphy.com/embed/xTk9ZLg70jvMTasphu" frameBorder="0"  width="480" height="270"  >
@@ -88,17 +91,14 @@
 </iframe>
 </div>
 
-      <centre class="PlayDiv" >
-
+<div class="PlayBox">
 <div class="playButton">
 <span class="dot" ></span>
-<div><p class ="play"> PLAY  </p></div>
-
+<p class ="play"> PLAY  </p>
+</div>
+</div>
 
 </div>
-</centre>
-
-      
 <div class="border"></div>
 
       <centre class="aboutDiv">

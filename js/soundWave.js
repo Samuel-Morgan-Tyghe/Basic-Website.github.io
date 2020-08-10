@@ -48,7 +48,7 @@ function setup() {
   if (typen==4) {squareW = true;}  
 
 
-  createCanvas(displayWidth, displayHeight);
+  createCanvas(windowWidth, windowHeight);
   // Starts in the middle
   x = width / 2;
   y = height;
@@ -99,6 +99,7 @@ selector = selector + 1;
 
 
 function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
   centerCanvas();
 }
 
