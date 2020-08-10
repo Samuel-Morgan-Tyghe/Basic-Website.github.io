@@ -22,7 +22,7 @@ let toothW = false;
 let squareW = false;
 let typen;
 var cnv;
-let colorV = color(0);
+let colorV;
 var selector = 0;
 
 
@@ -33,6 +33,8 @@ function centerCanvas() {
 }
 
 function setup() {
+  colorV = color(255, 204, 0);
+
   cnv = createCanvas(windowWidth, windowHeight);
   centerCanvas();
   wiggleamount = random(1, 5);
@@ -85,11 +87,11 @@ text
 function mouseClicked() {
 selector = selector + 1;
   if (selector == 1) {
-    colorV = rgb(20,159,157);
+    colorV = color(20,159,157);
   } else if (selector == 2) {
-    colorV = rgb(238,243,220);
+    colorV = color(238,243,220);
   } else if (selector == 3) {
-    colorV = rgb(233,94,87);
+    colorV = color(233,94,87);
     selector = 0;
   }
 

@@ -34,13 +34,21 @@
     selector = selector + 1;
     if (selector == 1) {
       document.getElementById("wrapper").style.cssText = "color:rgb(20,159,157); background-color: rgb(233,94,87);"
-var ccolor = rgb(233,94,87);
+      document.getElementsByClassName("fColor").style.cssText = "color:rgb(20,159,157);"
+      document.getElementsByClassName("title1").style.cssText = "color: rgb(233,94,87);"
+
     } else if (selector == 2) {
       document.getElementById("wrapper").style.cssText = "color:rgb(238,243,220); background-color: rgb(120,159,157);"
+      document.getElementsByClassName("fColor").style.cssText = "color:rgb(238,243,220);"
+      document.getElementsByClassName("title1").style.cssText = "color:rgb(120,159,157);"
+
 
     } else if (selector == 3) {
-      document.getElementById("wrapper").style.cssText = "color:rgb(233,94,87);background-color:rgb(238,243,220);";
       selector = 0;
+      document.getElementById("wrapper").style.cssText = "color:rgb(233,94,87);background-color:rgb(238,243,220);";
+      document.getElementsByClassName("fColor").style.cssText = "color:rgb(233,94,87);";
+      document.getElementsByClassName("title1").style.cssText = "color:rgb(238,243,220);"
+
     }
 
   }
@@ -53,8 +61,14 @@ var ccolor = rgb(233,94,87);
    <body onclick="change_css()">
 
 
+      <div class="fColor"id="fColor"></div>
+      <div class="bColor"></div>
+
 
 <main class="wrapper"id="wrapper"onclick="change_css()>
+
+
+
 
 
 <centre class="everythingbutscript">
@@ -67,6 +81,8 @@ var ccolor = rgb(233,94,87);
 
 
       <h1 class="title"> SIDE ROOM RECORDINGS</h1>
+      <div class="bColor"><h1 class="title1"> SIDE ROOM RECORDINGS</h1></div>
+
 </div>
 
 

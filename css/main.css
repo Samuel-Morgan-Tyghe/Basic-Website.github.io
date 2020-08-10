@@ -10,7 +10,7 @@
   height:50vw;
 }
 
-.page1 h1 {
+.page1 h1{
   vertical-align: middle;
 
   text-align: center;
@@ -20,11 +20,23 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
+.title{
+  z-index: 0;
+}
+.title::first-letter{
+  color: aqua;
+    z-index: 3;
+} 
+.bColor .title1{
+  position: absolute;
+
+ -webkit-text-stroke-width: 0.5vw; 
+  z-index: 1;
+}
 
 #defaultCanvas0 {
   z-index: 0;
   opacity: 100%;
-  mix-blend-mode: difference;
 
 }
 
