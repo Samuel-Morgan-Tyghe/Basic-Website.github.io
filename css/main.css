@@ -1,24 +1,31 @@
 
-.three {
-  background-color: #440381;
+.wrapper{
+
+  background-color: khaki;
+}
+
+.page1{
+
+  width: 100%;
+  height:50vw;
+}
+
+.page1 h1 {
+  vertical-align: middle;
+
+  text-align: center;
+  font-size: 6vw;
+  position: fixed;
+  left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #defaultCanvas0 {
-  background-color: khaki;
-  position: fixed;
-  z-index: -2;
-  opacity: 30%;
-}
+  z-index: 0;
+  opacity: 100%;
+  mix-blend-mode: difference;
 
-
-/*p:active, h1:active, h2:active h3:active h4:active{
-background-color: lightyellow;
-z-index: 1;
-}*/
-
-.wrapper{
-z-index: 1;
-background-color: lavender;
 }
 
 .border0{
@@ -30,22 +37,12 @@ left:5%;
 position: fixed;
 }
 
-
-
-
 h1{
 
 
 z-index: 1;
 }
-.topDiv , h1 {
-padding:6vw;
 
-text-align: center;
-font-size: 6vw;
-z-index: 1;
-
-}
 
 .gifRecordingd{
 margin-top: -10%;
@@ -150,6 +147,7 @@ margin-left:25%;
 
 }
 .projectsDiv{
+margin: 50%;
 background-color:inherit;
 flex-direction: column;
 }
@@ -162,3 +160,6 @@ border: 5px double rgb(12, 162, 175);
 
   height: 100%;
 }
+
+
+

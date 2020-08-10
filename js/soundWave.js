@@ -21,9 +21,20 @@ let triangleW = false;
 let toothW = false;
 let squareW = false;
 let typen;
+var cnv;
+let colorV = color(0);
+var selector = 0;
 
+
+function centerCanvas() {
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  cnv.position(x, y);
+}
 
 function setup() {
+  cnv = createCanvas(windowWidth, windowHeight);
+  centerCanvas();
   wiggleamount = random(1, 5);
   wiggleamount1 = random(1, 5);
   wiggleamount1b = wiggleamount1;
@@ -55,7 +66,7 @@ function setup() {
 
 function draw() {
   //image(img,0,0);
-  //background(0);
+ // background(0);
 
   //erase();
   balls.forEach(ball => {
@@ -69,6 +80,24 @@ function draw() {
   // fill(100);
   //ellipse(x, y, 24, 24);
 text 
+}
+
+function mouseClicked() {
+selector = selector + 1;
+  if (selector == 1) {
+    colorV = rgb(20,159,157);
+  } else if (selector == 2) {
+    colorV = rgb(238,243,220);
+  } else if (selector == 3) {
+    colorV = rgb(233,94,87);
+    selector = 0;
+  }
+
+}
+
+
+function windowResized() {
+  centerCanvas();
 }
 
 class Ball {
@@ -222,7 +251,7 @@ class Ball {
       bally[l] = this.y;
 
       l++;
-      fill(0);
+      fill(colorV);
 
       if (l == 1) {
         l = 0;
