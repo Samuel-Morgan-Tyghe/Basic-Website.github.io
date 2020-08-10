@@ -31,7 +31,7 @@
 }
 
 .title::first-line{
-  z-index: -1;
+  z-index: -2;
 } 
 .bColor .title1{
   position: absolute;
@@ -94,22 +94,30 @@
 
 
 
+.page3{
+  position: relative;
 
+z-index: 4;
+
+}
 
 .gifRecording{
 
 }
 .aboutDiv{
+  width: 100%;
 background-color:inherit;
 display:flex;
 margin:auto;
 margin-left: 25%;
-height:500px;
+height: 60vw;
+
 }
 .aboutBlank{
 }
 
 .aboutGif{
+  margin-top: 20vw;
 }
 
 .aboutpcontainer{
@@ -154,19 +162,43 @@ margin-left:25%;
  border: 5px double rgb(12, 162, 175);
 
 }
+
+.page4{
+position: absolute;
+height: 60vw;
+background-color: aquamarine;
+
+}
 .projectsDiv{
-margin: 50%;
-background-color:inherit;
-flex-direction: column;
+
+}
+.projectsDiv h1{
+font-size: 5vw;
+text-align: center;
+margin-top: 10%;}
+
+
+.Videos{
+
+}
+
+.Video{
+  
 }
 
 .borders{
 width: 90%;
 margin-left:5%;
-
 border: 5px double rgb(12, 162, 175);
-
   height: 100%;
+  width: 100%;
+}
+.priceDiv{
+  position: absolute;
+height: 10vw;
+text-align: center;
+margin:50%;
+
 }
 
 

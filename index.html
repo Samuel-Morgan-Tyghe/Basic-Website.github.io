@@ -7,7 +7,28 @@
 
 <script src="js\rellax.min.js"></script>
 <script>
-  var rellax = new Rellax('.rellax');
+var windw = this;
+
+$.fn.followTo = function ( pos ) {
+    var $this = this,
+        $window = $(windw);
+    
+    $window.scroll(function(e){
+        if ($window.scrollTop() > pos) {
+            $this.css({
+                position: 'absolute',
+                top: pos
+            });
+        } else {
+            $this.css({
+                position: 'fixed',
+                top: 0
+            });
+        }
+    });
+};
+
+$('#side').followTo(50);
 </script>
 
 
@@ -64,7 +85,7 @@
    <body onclick="change_css()">
 
 
-<main class="wrapper"id="wrapper"onclick="change_css()>
+<main class="wrapper"id="wrapper"onclick=change_css()>
 
 
 
@@ -80,7 +101,7 @@
 
 
       <h1 class="title fColor" id="title"> SIDE ROOM RECORDINGS</h1>
-      <div class="bColor"><h1 class="title1"> SIDE ROOM RECORDINGS</h1></div>
+      <div class="bColor"><h1 class="title1"id="side"> SIDE ROOM RECORDINGS</h1></div>
 
 </div>
 <div class="page2">
@@ -99,6 +120,7 @@
 </div>
 
 </div>
+<div class="page3">
 <div class="border"></div>
 
       <centre class="aboutDiv">
@@ -126,21 +148,28 @@ Side Room Recordings is a portable recording studio founded by Jacob Myles Tyghe
 
 </div>
       </centre>
-
-      <centre class="projectsDiv">
       <div class="borders"></div>
+</div>
 
+
+
+<div class="page4">
+      <centre class="projectsDiv">
 
          <h1>SSR Projects</h1>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/dT3501_Zhes" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/yI2oS2hoL0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/-bh_AOQgQ3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <div class= "Videos">
+         <iframe class= "Video" width="560" height="315" src="https://www.youtube.com/embed/dT3501_Zhes" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <iframe class= "Video" width="560" height="315" src="https://www.youtube.com/embed/yI2oS2hoL0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <iframe class= "Video" width="560" height="315" src="https://www.youtube.com/embed/-bh_AOQgQ3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <iframe class= "Video" width="560" height="315" src="https://www.youtube.com/embed/Ew0vDD4kesA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</centre >
+</div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ew0vDD4kesA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </centre >
 
+
+<div class="page5">
       <div class="borders"></div>
-
          <centre class="priceDiv">
             <h2>Packages</h2>
         
@@ -149,6 +178,9 @@ Side Room Recordings is a portable recording studio founded by Jacob Myles Tyghe
                         <p> £30 Soap Wash</p>
                         <p> £40 Soap Wash</p>
       </centre >
+</div>
+
+
 
             </centre>
          </main >
