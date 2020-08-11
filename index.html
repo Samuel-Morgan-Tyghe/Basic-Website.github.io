@@ -4,6 +4,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
       <script src="js\soundWave.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
 
 <script src="js\rellax.min.js"></script>
 <script>
@@ -52,7 +55,7 @@ $('#side').followTo(50);
   var selector = 0;
   var c1 = "rgb(225,101,93);";
   var c2 = "rgb(132,190,216);";
-  var c3= "rgb(131,189,146);";
+  var c3= "rgb(240, 230, 140);";
 
 
 
@@ -61,16 +64,29 @@ $('#side').followTo(50);
     if (selector == 1) {
       document.getElementById("wrapper").style.cssText = "color:"+c1+ " background-color:" +c2;
       document.getElementById("title").style.cssText = "color:"+c3;
+      document.getElementById("page2").style.cssText =  "background-color:" +c2;
+      document.getElementById("page3").style.cssText =  "background-color:" +c2;
+      document.getElementById("page4").style.cssText =  "background-color:" +c2;
+      document.getElementById("page5").style.cssText =  "background-color:" +c2;
 
 
     } else if (selector == 2) {
       document.getElementById("wrapper").style.cssText = "color:"+c2+ " background-color:" +c3;
       document.getElementById("title").style.cssText = "color:"+c1;
+      document.getElementById("page2").style.cssText = " background-color:" +c3;
+      document.getElementById("page3").style.cssText =  " background-color:" +c3;
+      document.getElementById("page4").style.cssText =  " background-color:" +c3;
+      document.getElementById("page5").style.cssText = " background-color:" +c3;
 
 
     } else if (selector == 3) {
       document.getElementById("wrapper").style.cssText = "color:"+c3+ " background-color:" +c1;
       document.getElementById("title").style.cssText = "color:" +c2;
+      document.getElementById("page2").style.cssText = " background-color:" +c1;
+      document.getElementById("page3").style.cssText = " background-color:" +c1;
+      document.getElementById("page4").style.cssText = " background-color:" +c1;
+      document.getElementById("page5").style.cssText = " background-color:" +c1;
+
       selector = 0;
 
     }
@@ -85,15 +101,14 @@ $('#side').followTo(50);
    <body onclick="change_css()">
 
 
-<main class="wrapper"id="wrapper"onclick=change_css()>
+<main class="wrapper"id="wrapper"onclick="change_css()">
 
 
 
 
 
-<centre class="everythingbutscript">
 
-<div class="page1">
+<div class="page1" id ="page1" onclick="change_css()">
 
 
 <div class="border0"></div>
@@ -104,7 +119,7 @@ $('#side').followTo(50);
       <div class="bColor"><h1 class="title1"id="side"> SIDE ROOM RECORDINGS</h1></div>
 
 </div>
-<div class="page2">
+<div class="page2"id ="page2" onclick="change_css()">
 
 <div class="gifRecordingd" style="position:relative;">
 <iframe class="gifRecording" src="https://giphy.com/embed/xTk9ZLg70jvMTasphu" frameBorder="0"  width="480" height="270"  >
@@ -120,7 +135,7 @@ $('#side').followTo(50);
 </div>
 
 </div>
-<div class="page3">
+<div class="page3"id ="page3" onclick="change_css()">
 <div class="border"></div>
 
       <centre class="aboutDiv">
@@ -153,36 +168,35 @@ Side Room Recordings is a portable recording studio founded by Jacob Myles Tyghe
 
 
 
-<div class="page4">
+<div class="page4" id ="page4" onclick="change_css()">
       <centre class="projectsDiv">
 
          <h1>SSR Projects</h1>
-         <div class= "Videos">
-         <iframe class= "Video" width="560" height="315" src="https://www.youtube.com/embed/dT3501_Zhes" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         <iframe class= "Video" width="560" height="315" src="https://www.youtube.com/embed/yI2oS2hoL0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         <iframe class= "Video" width="560" height="315" src="https://www.youtube.com/embed/-bh_AOQgQ3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         <iframe class= "Video" width="560" height="315" src="https://www.youtube.com/embed/Ew0vDD4kesA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <div class= "PVideos">
+         <iframe class= "PVideo" width="560" height="315" src="https://www.youtube.com/embed/dT3501_Zhes" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <iframe class= "PVideo" width="560" height="315" src="https://www.youtube.com/embed/yI2oS2hoL0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <iframe class= "PVideo" width="560" height="315" src="https://www.youtube.com/embed/-bh_AOQgQ3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <iframe class= "PVideo" width="560" height="315" src="https://www.youtube.com/embed/Ew0vDD4kesA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </centre >
 </div>
 
 
+<div class="borders"></div>
 
-<div class="page5">
-      <div class="borders"></div>
+<div class="page5"id ="page5" onclick="change_css()">
          <centre class="priceDiv">
             <h2>Packages</h2>
         
-            <p> £10 Soap Wash</p>
-                       <p> £20 Soap Wash</p>
-                        <p> £30 Soap Wash</p>
-                        <p> £40 Soap Wash</p>
+<p>£50 1 x Track</p>
+<p>£70 1 x Track</p>
+<p>£100 1 x Song</p>
+<p>£300 1 x Album</p>
       </centre >
 </div>
 
 
 
-            </centre>
          </main >
 
          </body>

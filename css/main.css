@@ -1,7 +1,7 @@
 
 .wrapper{
 
-  background-color: khaki;
+  background-color: rgb(240, 230, 140);
 }
 
 .border0{
@@ -164,10 +164,8 @@ margin-left:25%;
 }
 
 .page4{
-position: absolute;
+position: relative;
 height: 60vw;
-background-color: aquamarine;
-
 }
 .projectsDiv{
 
@@ -178,28 +176,45 @@ text-align: center;
 margin-top: 10%;}
 
 
-.Videos{
+.PVideos{
+  text-align: center;
 
 }
 
-.Video{
+.PVideo{
+  position: relative;
+  margin: 5vw;
+
   
 }
 
 .borders{
 width: 90%;
 margin-left:5%;
+margin-top: 10%;
 border: 5px double rgb(12, 162, 175);
-  height: 100%;
-  width: 100%;
 }
+
+.page5{
+  position: relative;
+  height: 60vw;
+background-color: aquamarine;
+}
+
 .priceDiv{
-  position: absolute;
-height: 10vw;
 text-align: center;
-margin:50%;
-
+width: 50%;
 }
 
+.priceDiv h2{
+  text-align: center;
 
+  font-size: 10vw;
+  text-align: center;
+}
+.priceDiv p{
+text-align: end;
+margin-right: 20vw;
+font-size: 2vw;
+}
 
