@@ -18,34 +18,39 @@
   var selector = 0;
   var c1 = "rgb(225,101,93)";
   var c2 = "rgb(132,190,216)";
-  var c3= "rgb(240,230,140)";
-  var c4;
+  var c3 = "rgb(240,230,140)";
+  var c4 = "rgb(230,230,230)";
+  var c5 ;
   var elements;
   var i;
 
-  function change_css(color1,color2,color3) {
+  function change_css(color1,color2,color3,color4) {
 
     elements = document.getElementsByClassName("color1");
-for( i=0; i<elements.length; i++) { 
+for(var i=0; i<elements.length; i++) { 
   elements[i].style.backgroundColor=c1;
 }
 
  elements = document.getElementsByClassName("color2");
-for( i=0; i<elements.length; i++) { 
+for(var i=0; i<elements.length; i++) { 
   elements[i].style.color=c2;
 }
 
  elements = document.getElementsByClassName("color3");
-for( i=0; i<elements.length; i++) { 
+for(var i=0; i<elements.length; i++) { 
   elements[i].style.color=c3;
 }
 
+elements = document.getElementsByClassName("color4");
+for(var i=0; i<elements.length; i++) { 
+  elements[i].style.backgroundColor=c4;
+}
 
-
-c4=c1;
+c5=c1;
 c1=c2;
 c2=c3;
 c3=c4;
+c4=c5;
 
   }
 
@@ -54,10 +59,10 @@ c3=c4;
    </head>
 
 
-   <body onclick="change_css()">
+   <body onload="change_css()" onclick="change_css()">
 
 
-<main class="wrapper color1 color2"onclick="change_css()">
+<main class="wrapper color1 color2">
 
 
 
@@ -85,7 +90,7 @@ c3=c4;
 </div>
 
 <div class="PlayBox"  >
-<div class="playButton">
+<div class="playButton color4">
 <span  ></span>
 <p class ="play"> PLAY  </p>
 </div>
@@ -128,7 +133,7 @@ Side Room Recordings is a portable recording studio founded by Jacob Myles Tyghe
 <div class="page4 color1" id ="page4" >
       <centre class="projectsDiv">
 
-         <h1>SSR Projects</h1>
+         <h1>Projects</h1>
          <div class= "PVideos">
          <iframe class= "PVideo" width="560" height="315" src="https://www.youtube.com/embed/dT3501_Zhes" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
          <iframe class= "PVideo" width="560" height="315" src="https://www.youtube.com/embed/yI2oS2hoL0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -145,10 +150,10 @@ Side Room Recordings is a portable recording studio founded by Jacob Myles Tyghe
          <div class="priceDiv" id="priceDiv">
             <h2>Packages</h2>
         
-<h4 class="dot" id="firstdot" >£50 1 x Track</h4>
-<h4 class="dot">£70 1 x Track</h4>
-<h4 class="dot">£100 1 x Song</h4>
-<h4 class="dot">£300 1 x Album</h4>
+<h4 class="dot color4" id="firstdot" >£50 1 x Track</h4>
+<h4 class="dot color4">£70 1 x Track</h4>
+<h4 class="dot color4">£100 1 x Song</h4>
+<h4 class="dot color4">£300 1 x Album</h4>
          </div >
 </div>
 

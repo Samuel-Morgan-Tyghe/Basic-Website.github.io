@@ -1,5 +1,7 @@
 .wrapper {
-
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
   background-color: rgb(240, 230, 140);
 }
 
@@ -75,7 +77,6 @@
   bottom: 20%;
   height: 20vw;
   width: 20vw;
-  background-color: rgb(255, 0, 0, 0.6);
   border-radius: 50%;
   display: inline-block;
 
@@ -127,7 +128,6 @@
 }
 
 .button_slide {
-  color: green;
   border: 2px solid rgb(20, 159, 157);
   border-radius: 0px;
   padding: 18px 36px;
