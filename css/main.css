@@ -5,6 +5,19 @@
   background-color: rgb(240, 230, 140);
 }
 
+.color1{
+background-color:rgb(225,101,93) ;
+}
+.color2{
+  color:rgb(132,190,216);
+}
+.color3{
+color: rgb(240,230,140);
+}
+.color4{
+background-color:rgb(230,230,230) ;
+}
+
 .border0 {
 
   width: 90%;
@@ -237,7 +250,7 @@
 
   }
 }
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+@import url(https://indestructibletype.com/fonts/Jost.css);
 
 * 
 .page6{
@@ -255,13 +268,13 @@ height: 50vw;
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
 #contact {
-	background:#F9F9F9;
 	padding:25px;
   margin:50px 0;
 
 }
 
 #contact h3 {
+  
 	color: #F96;
 	display: block;
 	font-size: 30px;
@@ -275,6 +288,8 @@ height: 50vw;
 }
 
 fieldset {
+  font-family: "Jost";
+
 	border: medium none !important;
 	margin: 0 0 10px;
 	min-width: 100%;
@@ -287,20 +302,26 @@ fieldset {
 	border:1px solid #CCC;
 	background:#FFF;
 	margin:0 0 5px;
-	padding:10px;
+  padding:10px;
+  font-family: "Jost";
+
 }
 
 #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
 	-webkit-transition:border-color 0.3s ease-in-out;
 	-moz-transition:border-color 0.3s ease-in-out;
 	transition:border-color 0.3s ease-in-out;
-	border:1px solid #AAA;
+  border:1px solid #AAA;
+  font-family: "Jost";
+
 }
 
 #contact textarea {
 	height:100px;
 	max-width:100%;
   resize:none;
+  font-family: "Jost";
+
 }
 
 #contact button[type="submit"] {
@@ -311,21 +332,28 @@ fieldset {
 	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;
-	font-size:15px;
+  font-size:15px;
+  font-family: "Jost";
+
 }
 
 #contact button[type="submit"]:hover {
 	background:#09C;
 	-webkit-transition:background 0.3s ease-in-out;
 	-moz-transition:background 0.3s ease-in-out;
-	transition:background-color 0.3s ease-in-out;
+  transition:background-color 0.3s ease-in-out;
+  font-family: "Jost";
+
 }
 
-#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+#contact button[type="submit" ]:active {   font-family: "Jost";
+  box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
 
 #contact input:focus, #contact textarea:focus {
 	outline:0;
-	border:1px solid #999;
+  border:1px solid #999;
+  font-family: "Jost";
+
 }
 ::-webkit-input-placeholder {
  color:#888;
@@ -338,4 +366,11 @@ fieldset {
 }
 :-ms-input-placeholder {
  color:#888;
+
+}
+
+.fontstyle{
+  font-family: "Jost";
+  font-size: 10vw;
+
 }
