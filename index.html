@@ -1,95 +1,51 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
       <script src="js\soundWave.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-
-
 <script src="js\rellax.min.js"></script>
-<script>
-var windw = this;
-
-$.fn.followTo = function ( pos ) {
-    var $this = this,
-        $window = $(windw);
-    
-    $window.scroll(function(e){
-        if ($window.scrollTop() > pos) {
-            $this.css({
-                position: 'absolute',
-                top: pos
-            });
-        } else {
-            $this.css({
-                position: 'fixed',
-                top: 0
-            });
-        }
-    });
-};
-
-$('#side').followTo(50);
-</script>
-
-
-
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-
 <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
 <link rel="stylesheet" href="css\main.css">
-
       <style>
       h1, h2, h3, h4, h5, h6, p {
          font-family: "Jost";
- 
 }
 </style>
 
-<script> var colorcustom = black;
-</script>
 <script>
   var selector = 0;
-  var c1 = "rgb(225,101,93);";
-  var c2 = "rgb(132,190,216);";
-  var c3= "rgb(240, 230, 140);";
+  var c1 = "rgb(225,101,93)";
+  var c2 = "rgb(132,190,216)";
+  var c3= "rgb(240,230,140)";
+  var c4;
+  var elements;
+  var i;
+
+  function change_css(color1,color2,color3) {
+
+    elements = document.getElementsByClassName("color1");
+for( i=0; i<elements.length; i++) { 
+  elements[i].style.backgroundColor=c1;
+}
+
+ elements = document.getElementsByClassName("color2");
+for( i=0; i<elements.length; i++) { 
+  elements[i].style.color=c2;
+}
+
+ elements = document.getElementsByClassName("color3");
+for( i=0; i<elements.length; i++) { 
+  elements[i].style.color=c3;
+}
 
 
 
-  function change_css() {
-    selector = selector + 1;
-    if (selector == 1) {
-      document.getElementById("wrapper").style.cssText = "color:"+c1+ " background-color:" +c2;
-      document.getElementById("title").style.cssText = "color:"+c3;
-      document.getElementById("page2").style.cssText =  "background-color:" +c2;
-      document.getElementById("page3").style.cssText =  "background-color:" +c2;
-      document.getElementById("page4").style.cssText =  "background-color:" +c2;
-      document.getElementById("page5").style.cssText =  "background-color:" +c2;
-
-
-    } else if (selector == 2) {
-      document.getElementById("wrapper").style.cssText = "color:"+c2+ " background-color:" +c3;
-      document.getElementById("title").style.cssText = "color:"+c1;
-      document.getElementById("page2").style.cssText = " background-color:" +c3;
-      document.getElementById("page3").style.cssText =  " background-color:" +c3;
-      document.getElementById("page4").style.cssText =  " background-color:" +c3;
-      document.getElementById("page5").style.cssText = " background-color:" +c3;
-
-
-    } else if (selector == 3) {
-      document.getElementById("wrapper").style.cssText = "color:"+c3+ " background-color:" +c1;
-      document.getElementById("title").style.cssText = "color:" +c2;
-      document.getElementById("page2").style.cssText = " background-color:" +c1;
-      document.getElementById("page3").style.cssText = " background-color:" +c1;
-      document.getElementById("page4").style.cssText = " background-color:" +c1;
-      document.getElementById("page5").style.cssText = " background-color:" +c1;
-
-      selector = 0;
-
-    }
+c4=c1;
+c1=c2;
+c2=c3;
+c3=c4;
 
   }
 
@@ -101,25 +57,26 @@ $('#side').followTo(50);
    <body onclick="change_css()">
 
 
-<main class="wrapper"id="wrapper"onclick="change_css()">
+<main class="wrapper color1 color2"onclick="change_css()">
 
 
 
 
 
 
-<div class="page1" id ="page1" onclick="change_css()">
+<div class="page1" id ="page1" >
 
 
-<div class="border0"></div>
+<div class="border0" ></div>
 
 
 
-      <h1 class="title fColor" id="title"> SIDE ROOM RECORDINGS</h1>
-      <div class="bColor"><h1 class="title1"id="side"> SIDE ROOM RECORDINGS</h1></div>
+      <h1 class="title color3" id="title"> SIDE ROOM RECORDINGS</h1>
+      <div class="bColor"> <h1 class="title1"id="side"> SIDE ROOM RECORDINGS </h1> </div>
 
 </div>
-<div class="page2"id ="page2" onclick="change_css()">
+
+<div class="page2"id ="page2 color1" >
 
 <div class="gifRecordingd" style="position:relative;">
 <iframe class="gifRecording" src="https://giphy.com/embed/xTk9ZLg70jvMTasphu" frameBorder="0"  width="480" height="270"  >
@@ -127,15 +84,15 @@ $('#side').followTo(50);
 </iframe>
 </div>
 
-<div class="PlayBox">
+<div class="PlayBox"  >
 <div class="playButton">
-<span class="dot" ></span>
+<span  ></span>
 <p class ="play"> PLAY  </p>
 </div>
 </div>
-
 </div>
-<div class="page3"id ="page3" onclick="change_css()">
+
+<div class="page3 color1"id ="page3">
 <div class="border"></div>
 
       <centre class="aboutDiv">
@@ -168,7 +125,7 @@ Side Room Recordings is a portable recording studio founded by Jacob Myles Tyghe
 
 
 
-<div class="page4" id ="page4" onclick="change_css()">
+<div class="page4 color1" id ="page4" >
       <centre class="projectsDiv">
 
          <h1>SSR Projects</h1>
@@ -184,18 +141,20 @@ Side Room Recordings is a portable recording studio founded by Jacob Myles Tyghe
 
 <div class="borders"></div>
 
-<div class="page5"id ="page5" onclick="change_css()">
-         <centre class="priceDiv">
+<div class="page5 color1"id ="page5" >
+         <div class="priceDiv" id="priceDiv">
             <h2>Packages</h2>
         
-<h4>£50 1 x Track</h4>
-<h4>£70 1 x Track</h4>
-<h4>£100 1 x Song</h4>
-<h4>£300 1 x Album</h4>
-      </centre >
+<h4 class="dot" id="firstdot" >£50 1 x Track</h4>
+<h4 class="dot">£70 1 x Track</h4>
+<h4 class="dot">£100 1 x Song</h4>
+<h4 class="dot">£300 1 x Album</h4>
+         </div >
 </div>
 
+<div class="page6 color1 color2">
 
+</div>
 
          </main >
 

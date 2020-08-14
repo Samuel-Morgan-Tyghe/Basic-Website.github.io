@@ -1,42 +1,42 @@
-
-.wrapper{
+.wrapper {
 
   background-color: rgb(240, 230, 140);
 }
 
-.border0{
+.border0 {
 
   width: 90%;
-  text-align:center;
-  left:5%;
-   border: 5px double rgb(12, 162, 175);
+  text-align: center;
+  left: 5%;
+  border: 5px double rgb(12, 162, 175);
   position: fixed;
-  }
-
-.page1{
-
-  width: 100%;
-  height:56vw;
 }
 
-.page1 h1{
+.page1 {
+
+  width: 100%;
+  height: 56vw;
+}
+
+.page1 h1 {
   vertical-align: middle;
 
   text-align: center;
   font-size: 6vw;
   position: fixed;
   left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.title::first-line{
+.title::first-line {
   z-index: -2;
-} 
-.bColor .title1{
+}
+
+.bColor .title1 {
   position: absolute;
 
- -webkit-text-stroke-width: 0.5vw; 
+  -webkit-text-stroke-width: 0.5vw;
   z-index: 1;
 }
 
@@ -52,31 +52,30 @@
 
 
 
-.page2{
-
-}
 
 
-.gifRecordingd{
+
+.gifRecordingd {
   top: 20%;
   left: 55%;
-    position: relative;
-    overflow: hidden;
-    width: 34vw;
-    padding-top: 19.2vw; 
-  }
+  position: relative;
+  overflow: hidden;
+  width: 34vw;
+  padding-top: 19.2vw;
+}
 
-  .PlayBox{
-    position: relative;
-    height: 33vw;
-  }
-.playButton{
+.PlayBox {
+  position: relative;
+  height: 33vw;
+}
+
+.playButton {
   position: relative;
   left: 40%;
-  bottom:20%;
+  bottom: 20%;
   height: 20vw;
   width: 20vw;
-  background-color: rgb(255,0,0,.6);
+  background-color: rgb(255, 0, 0, 0.6);
   border-radius: 50%;
   display: inline-block;
 
@@ -86,56 +85,50 @@
 
   z-index: 1;
 
-  font-size:8vw;
-  width:200%;
+  font-size: 8vw;
+  width: 200%;
   text-align: center;
 }
 
 
 
 
-.page3{
+.page3 {
   position: relative;
 
-z-index: 4;
+  z-index: 4;
 
 }
 
-.gifRecording{
 
-}
-.aboutDiv{
+.aboutDiv {
   width: 100%;
-background-color:inherit;
-display:flex;
-margin:auto;
-margin-left: 25%;
-height: 60vw;
+  background-color: inherit;
+  display: flex;
+  margin: auto;
+  margin-left: 25%;
+  height: 60vw;
 
 }
-.aboutBlank{
-}
 
-.aboutGif{
+
+.aboutGif {
   margin-top: 20vw;
 }
 
-.aboutpcontainer{
-text-align: left;
-overflow-y: auto	;
-height:300px;
-margin: auto;
-margin-left:5%;
-text-transform: uppercase;
+.aboutpcontainer {
+  text-align: left;
+  overflow-y: auto;
+  height: 300px;
+  margin: auto;
+  margin-left: 5%;
+  text-transform: uppercase;
   width: 25vw;
 }
-.aboutP{
- 
 
-}
 .button_slide {
   color: green;
-  border: 2px solid rgb(20,159,157);
+  border: 2px solid rgb(20, 159, 157);
   border-radius: 0px;
   padding: 18px 36px;
   display: inline-block;
@@ -156,65 +149,71 @@ text-transform: uppercase;
 
 
 
-.border{
-width: 70%;
-margin-left:25%;
- border: 5px double rgb(12, 162, 175);
+.border {
+  width: 70%;
+  margin-left: 25%;
+  border: 5px double rgb(12, 162, 175);
 
 }
 
-.page4{
-position: relative;
-height: 60vw;
+.page4 {
+  position: relative;
+  height: 60vw;
 }
-.projectsDiv{
 
+.projectsDiv h1 {
+  font-size: 5vw;
+  text-align: center;
+  margin-top: 10%;
 }
-.projectsDiv h1{
-font-size: 5vw;
-text-align: center;
-margin-top: 10%;}
 
 
-.PVideos{
+.PVideos {
   text-align: center;
 
 }
 
-.PVideo{
+.PVideo {
   position: relative;
   margin: 5vw;
 
-  
+
 }
 
-.borders{
-width: 90%;
-margin-left:5%;
-margin-top: 10%;
-border: 5px double rgb(12, 162, 175);
+.borders {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10%;
+  border: 5px double rgb(12, 162, 175);
 }
 
-.page5{
+.page5 {
   position: relative;
   height: 60vw;
-background-color: aquamarine;
+  background-color: aquamarine;
 }
 
-.priceDiv{
-text-align: center;
-width: 50%;
-}
 
-.priceDiv h2{
-  text-align: center;
-
+.priceDiv h2 {
   font-size: 10vw;
   text-align: center;
 }
-.priceDiv h4{
-text-align: end;
-margin-right: 20vw;
-font-size: 2vw;
+
+.priceDiv h4 {
+  margin-right: 5vw;
+  font-size: 2vw;
 }
 
+#firstdot {
+  margin-left: 10%;
+
+}
+
+.dot {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
