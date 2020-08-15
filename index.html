@@ -17,9 +17,9 @@
 <script>
   var selector = 0;
   var c1 = "rgb(225,101,93)";
-  var c2 = "rgb(132,190,216)";
+  var c2 = "rgb(230,230,230)";
   var c3 = "rgb(240,230,140)";
-  var c4 = "rgb(230,230,230)";
+  var c4 = "rgb(132,190,216)";
   var c5 ;
   var elements;
   var i;
@@ -57,11 +57,34 @@ for(var i=0; i<elements.length; i++) {
 
 }
 
-function tosquare(dot){
+function tosquare(dot,addInfo){
   elements = document.getElementsByClassName("dot");
 for(var i=0; i<elements.length; i++) { 
   elements[i].style.cssText = 
-  "animation-name:stretch; animation-duration: 1.5s; animation-delay: 0;animation-fill-mode: forwards;animation-play-state: running;border-radius: 50px;content: 'a string';"
+  "  justify-content: center;display: inline-block;animation-name:stretch; animation-duration: 1.5s; animation-delay: 0;animation-fill-mode: forwards;animation-play-state: running;border-radius: 50px;"
+} 
+
+elements = document.getElementsByClassName("addInfo");
+for(var i=0; i<elements.length; i++) { 
+  elements[i].style.display = "block";
+} 
+
+/*
+document.getElementById("dot1").innerHTML = "£50 1 x Track Solo :One track any instrument within a 15mile radius of bath";
+document.getElementById("dot2").innerHTML = "£70 1 x Track Duo :Two track any instrument within a 15mile radius of bath";
+document.getElementById("dot3").innerHTML = "£100 1 x Track Solo :One track any instrument within a 15mile radius of bath";
+document.getElementById("dot4").innerHTML = "£300 1 x Track Solo :One track any instrument within a 15mile radius of bath";
+*/
+}
+
+function findMore(showMore,button_slide){
+  elements = document.getElementsByClassName("showMore");
+for(var i=0; i<elements.length; i++) { 
+  elements[i].style.display = "block";
+} 
+elements = document.getElementsByClassName("button_slide");
+for(var i=0; i<elements.length; i++) { 
+  elements[i].style.display = "none";
 } 
 
 }
@@ -108,9 +131,9 @@ for(var i=0; i<elements.length; i++) {
 </div>
 </div>
 </div>
+<div class="borders color1"></div>
 
-<div class="page3 color1"id ="page3">
-<div class="border"></div>
+<div class="page3 color1" id ="page3">
 
       <centre class="aboutDiv">
 
@@ -120,26 +143,25 @@ for(var i=0; i<elements.length; i++) {
          <div class="aboutGif" ><iframe src="https://gifer.com/embed/1fmB" width=400 height=500 frameBorder="0" allowFullScreen></iframe></div>
 
 
-
-
-
-
+         
 
          <div class="aboutpcontainer">
+         
       <p class="aboutP">
 <h4>
 Side Room Recordings is a portable recording studio founded by Jacob Myles Tyghe and situatied in centre of Bath, Somerset, England, near its counter-part Bristol.
+<br></br> <h4 class="showMore">Portable Studios give us here at Side Room Recordings a chance to record you in your natural habitat<br></br> The possibilties of where to record are endless, use the contact form at the end of the page to discuss any ideas you have</h4>
 </h4>
 
       </p>
 
-  <div class="button_slide slide_left">Find Out More</div>
+  <div class="button_slide slide_left" onclick="findMore()">Find Out More</div>
 
 </div>
       </centre>
-      <div class="borders"></div>
 </div>
 
+<div class="borders color1"></div>
 
 
 <div class="page4 color1" id ="page4" >
@@ -156,18 +178,20 @@ Side Room Recordings is a portable recording studio founded by Jacob Myles Tyghe
 </div>
 
 
-<div class="borders"></div>
+<div class="borders color1"></div>
 
 <div class="page5 color1"id ="page5" >
          <div class="priceDiv" id="priceDiv">
             <h2>Packages</h2>
         
-<h4 class="dot color4" onclick="tosquare()" id="dot1">£50<br></br>1 x Track<br></br>Solo</h4>
-<h4 class="dot color4" onclick="tosquare()" id="dot2">£70<br></br>1 x Track<br></br>Duo</h4>
-<h4 class="dot color4" onclick="tosquare()" id="dot3">£100<br></br>1 x Song<br></br>Full</h4>
-<h4 class="dot color4" onclick="tosquare()" id="dot4">£300<br></br>1 x Album<br></br>Info</h4>
+<div class="dot color4" onclick="tosquare()" id="dot1"><h4>£50<br></br>1 x Track<br></br>Solo<br></br><p class="addInfo">One track any instrument within a 15mile radius of bath</p></h4></div>
+<div class="dot color4" onclick="tosquare()" id="dot2"><h4>£70<br></br>1 x Track<br></br>Duo<br></br><p class="addInfo">Two track any instrument within a 15mile radius of bath</p></h4></div>
+<div class="dot color4" onclick="tosquare()" id="dot3"><h4>£100<br></br>1 x Song<br></br>Full<br></br><p class="addInfo">One Song any number of instrument within a 15mile radius of bath</p></h4></div>
+<div class="dot color4" onclick="tosquare()" id="dot4"><h4>£300<br></br>1 x Album<br></br>Info<br></br><p class="addInfo">Ten Songs any number of instrument within a 15mile radius of bath</p></h4></div>
          </div >
 </div>
+
+<div class="borders color1"></div>
 
 
 <div class="page6 color1 color2">
