@@ -189,6 +189,12 @@ background-color:rgb(230,230,230) ;
 
 
 }
+#center{
+  position: relative;
+text-align: center;
+left: 50%;
+
+}
 
 .borders {
   position: relative;
@@ -247,6 +253,11 @@ font-size: 1vw;
   justify-content: center;
 
 }
+.dot:hover {
+  
+opacity: 90%;
+}
+
 .addInfo{
 display: none;
 
@@ -391,5 +402,26 @@ fieldset {
 .fontstyle{
   font-family: "Jost";
   font-size: 10vw;
+
+}
+
+
+
+/* side page*/
+.pagetitle{
+font-size: 10vw;
+text-align: center;
+margin: auto;
+z-index: 4;
+}
+
+.space{
+  margin-bottom: 10vw;
+}
+
+.center{
+
+  margin: 15vw;
+  text-align: center;
 
 }
