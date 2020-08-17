@@ -15,83 +15,11 @@
          font-family: "Jost";
 }
 </style>
-
-<script>
-  var selector = 0;
-  var c1 = "rgb(225,101,93)";
-  var c2 = "rgb(230,230,230)";
-  var c3 = "rgb(240,230,140)";
-  var c4 = "rgb(132,190,216)";
-  var c5 ;
-  var elements;
-  var i;
-
-  function change_css(color1,color2,color3,color4) {
-c5=c1;
-c1=c2;
-c2=c3;
-c3=c4;
-c4=c5;
-
-    elements = document.getElementsByClassName("color1");
-for(var i=0; i<elements.length; i++) { 
-  elements[i].style.backgroundColor=c1;
-}
-
- elements = document.getElementsByClassName("color2");
-for(var i=0; i<elements.length; i++) { 
-  elements[i].style.color=c2;
-}
-
- elements = document.getElementsByClassName("color3");
-for(var i=0; i<elements.length; i++) { 
-  elements[i].style.color=c3;
-}
-
-elements = document.getElementsByClassName("color4");
-for(var i=0; i<elements.length; i++) { 
-  elements[i].style.backgroundColor=c4;
-}
+<script src="js\colorchange.js"></script>
+<script src="js\toSquareExpand.js"></script>
+<script src="js\findMore.js"></script>
 
 
-
-
-
-}
-
-function tosquare(dot,addInfo){
-  elements = document.getElementsByClassName("dot");
-for(var i=0; i<elements.length; i++) { 
-  elements[i].style.cssText = 
-  "  justify-content: center;display: inline-block;animation-name:stretch; animation-duration: 1.5s; animation-delay: 0;animation-fill-mode: forwards;animation-play-state: running;border-radius: 50px;"
-} 
-
-elements = document.getElementsByClassName("addInfo");
-for(var i=0; i<elements.length; i++) { 
-  elements[i].style.display = "block";
-} 
-
-/*
-document.getElementById("dot1").innerHTML = "£50 1 x Track Solo :One track any instrument within a 15mile radius of bath";
-document.getElementById("dot2").innerHTML = "£70 1 x Track Duo :Two track any instrument within a 15mile radius of bath";
-document.getElementById("dot3").innerHTML = "£100 1 x Track Solo :One track any instrument within a 15mile radius of bath";
-document.getElementById("dot4").innerHTML = "£300 1 x Track Solo :One track any instrument within a 15mile radius of bath";
-*/
-}
-
-function findMore(showMore,button_slide){
-  elements = document.getElementsByClassName("showMore");
-for(var i=0; i<elements.length; i++) { 
-  elements[i].style.display = "block";
-} 
-elements = document.getElementsByClassName("button_slide");
-for(var i=0; i<elements.length; i++) { 
-  elements[i].style.display = "none";
-} 
-
-}
-
-</script>
 <style type="text/css">body { cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAkABgDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAioqKAGu+6ADw8PwAvby7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiIgAAAAAAAAAAAAAAAAIiIiIgAAAAAAAAAAAAAAAAIiIiIgAAAAAAAAAAAAAAAAIiIiIgAAAAAAAAAAAAAAAAIiIiIiIgAAAAAAAAAAAAAAIiIiIiIgAAAAAAAAAAAAAAIiIiIiIgAAAAAAAAAAAAAAIiIiIiAAAAAAAAAAAAAAACIiIgAAMwAAAAAAAAAAAAAiIiIDMDIgAAAAAAAAAAAAIgAAAyICIgAAAAAAAAAAACAzAzAiICIgAAAAAAAAAAACIwMiAiICIAAAAAAAAAAAIiAAIiAiIAAAAAAAAAAAACIAMwIiAiAAAAAAAAAAAAAAIDIgIiAAAAAAAAAAAAAAAAECIgIgAAAAAAAAAAAAAAABECIgAAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUFBAAAAAAAAAAAAAAAAABQUFBAAAAAAAAAAAAAAAAFBQUFBAAAAAAAAAAAAAAAEFBQUFAAAAAAAAAAAAAAAAUFBQUEAAAAAAAAAAAAAAAQUFBQUAAAAAAAAAAAAAAABQUFBQQAAAAAAAAAAAAAAABQUFBAAAAAAAAAAAAAAAAABQUEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Af///AD///4Af///AAf//4AD+f/AAeH/4ADD//AAA//wAAf/8AAP//AAD//wAAf/8AAH//AAD//wAB//8AA///wAf//8AP//+AH///AD//4AP//8AH//+AD///AB///wAf//8AH///AB///wAf//+AP///wH///+D////////w=='), auto; }</style>
    </head>
 
