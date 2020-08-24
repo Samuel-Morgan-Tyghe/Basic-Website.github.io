@@ -5,6 +5,13 @@
   background-color: rgb(240, 230, 140);
 }
 
+
+*{
+  outline: 1px solid red;
+ 
+ }
+
+
 .color1{
 background-color:rgb(225,101,93) ;
 }
