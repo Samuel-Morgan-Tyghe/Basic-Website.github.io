@@ -1,5 +1,6 @@
 # Basic Website
 This project was created via github/gitPages , using the text editor to  create everything from scratch.
+https://samuel-morgan-tyghe.github.io/Basic-Website.github.io/
 
 ## What I Learnt
 * Basics of web hosting/servers, Web Server Management
