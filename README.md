@@ -1,5 +1,5 @@
 # Basic Website
-This project was created via github/gitPages , using the text editor to  create everything from scratch.
+This project was created via github/gitPages , using the text editor to create everything from scratch.
 
 https://samuel-morgan-tyghe.github.io/Basic-Website.github.io/
 
@@ -22,3 +22,7 @@ I have left an "unpolished" site that will improve and eventually be "polished".
 * Rebuild in React the website as a Single Page Application.
 * Using Bootstrap a Fully Responsive Website, Create back-end function for Contact Form. 
 * Perform SEO Analysis and add additional content, metadata.
+
+
+# Updated to React
+Please visit Latest Version - https://github.com/Samuel-Morgan-Tyghe/Basic-Website-To-React
